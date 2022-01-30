@@ -26,6 +26,37 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        Arrays.sort(array2)
+
+
+        for(i in 0..(array2.size-1))
+        {
+            println("Array2 index: $i value: ${array2[i]}")
+
+        }
+
+
+        println("Array1 Array2 ye eşit mi?:  ${Arrays.equals(array1,array2) }")
+
+       // var dizi = arrayOf("ahmet","mehmet","hacer","fatma","jale")
+        var dizi = arrayListOf("ahmet","mehmet","hacer","fatma","jale")
+
+        for (i in dizi) println(i)
+
+        dizi.add("Murtaza")
+        dizi.add("Selim")
+        dizi.add(2,"Ortega")
+
+
+        for (i in dizi) println(i)
+
+        dizi.remove("fatma") // fatma yı siler
+        for (i in dizi) println(i)
+
+        println("Dizinin boyutu: "+dizi.size)
+
+        println("Dizinin ikinci elemanı: "+dizi.get(2))
+
 
 
 }
